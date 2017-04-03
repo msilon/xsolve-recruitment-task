@@ -1,0 +1,63 @@
+<html lang="pl">
+<meta charset="utf-8">
+	<head>
+		<title>xsolve - zadania rekrutacyjne</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+	<div class="container-search">
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+         <button id="js-button-search-date" class="btn btn-primary">Wyszukaj po dacie</button>
+			<select id="js-search-select" name="selector">
+				<option value="first-name">Imię</option>
+				<option value="last-name">Nazwisko</option>
+				<option value="function">Funkcja</option>
+				<option value="experience">Doświadczenie</option>
+			</select>
+			<input type="text" id="js-search">
+			<button id="js-search-btn" class="btn btn-primary">Wyszukaj</button>
+			<button id="js-showData" class="btn-show-data btn btn-primary">Pokaż wszystkie dane</button>
+	</div>
+		<table id="js-table" class="sortable">
+			<thead>
+				<tr class="table-headers-container">
+					<th id="js-id-tHeader" data-sort="number" class="table-headers"> Identyfikator
+					</th>
+					<th id="js-firstName-tHeader" data-sort="name" class="table-headers">Imię
+					</th>
+					<th id="js-lastName-tHeader" data-sort="name" class="table-headers">Nazwisko
+					</th>
+					<th id="js-date-tHeader" data-sort="date" class="table-headers">Data
+					</th>
+					<th id="js-function-tHeader" data-sort="name" class="table-headers">Funkcja</th>
+					<th id="js-experience-tHeader" data-sort="number" class="table-headers">Doświadczenie
+					</th>
+				</tr>
+			</thead>
+			<tbody id="js-table-body">
+			</tbody>
+		</table>
+		<div class="container">
+			<div class="buttons-container">
+				<button id="js-show-next-1" class="btn btn-show-next">1</button>
+				<button id="js-show-next-2" class="btn btn-show-next">2</button>
+				<button id="js-show-next-3" class="btn btn-show-next">3</button>
+				<button id="js-show-next-results-1" class="btn btn-show-next-results inactive">1</button>
+				<button id="js-show-next-results-2" class="btn btn-show-next-results inactive">2</button>
+		</div>
+	<script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
